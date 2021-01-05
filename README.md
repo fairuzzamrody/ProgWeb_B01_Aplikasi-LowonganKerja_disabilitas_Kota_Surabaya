@@ -5,10 +5,10 @@ Oleh :
 <h1>KELOMPOK 1</h1>
 <ol>
 <h3>Anggota :</h3>
-  <li> M. Alfin Nur Khilmi     19051397046</li>
-  <li> Elfal Birri Firamadhani 19051397053</li>
-  <li> Fairuz	zamrody         19051397056</li>
-  <li> Arizfi Agustina         19051397069</li>
+  <li> M. Alfin Nur Khilmi     (19051397046)</li>
+  <li> Elfal Birri Firamadhani (19051397053)</li>
+  <li> Fairuz	zamrody         (19051397056)</li>
+  <li> Arizfi Agustina         (19051397069)</li>
 </ol> 
 
 Matakuliah : Pemrograman Web <br>
