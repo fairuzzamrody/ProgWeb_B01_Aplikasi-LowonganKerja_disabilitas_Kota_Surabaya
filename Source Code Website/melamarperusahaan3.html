@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lowongan Disabilitas Surabaya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.topnav {
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+.topnav logo{
+  float: left;
+  width: auto;
+  height: auto;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.bgimg-1 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("gambar/surabaya5.jpg");
+  min-height: 380px;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+h2{
+    color: black;
+    font-size: 20px;
+}
+p{
+    color: black;
+    margin-left: 50px;
+}
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #14c46c;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5%;
+  width: 200px;
+  margin-left: 20px;
+}
+#custom-button:hover {
+  opacity: 0.7;
+}
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+.send {
+  padding: 10px;
+  color: white;
+  background-color: #ff0000;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5%;
+  width: 200px;
+  float: right;
+}
+.send:hover {
+  opacity: 0.8;
+}
+
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <img id="topnavlogo" src="gambar/lowongan5.png" width="350px" height="85px"  >
+    <a href="profileuser3.html">Profile</a>
+    <a href="daftarperusahaan.html">Daftar Perusahaan</a>
+    <a href="landingpage.html">Home</a>
+  </div>
+<div class="bgimg-1">
+</div>
+<div style="color: rgb(255, 255, 255);background-color:rgb(255, 255, 255);text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">MELAMAR KE PERUSAHAAN</h3>
+  <hr>
+  <br>
+  <h2>DATA DIRI ANDA</h2>
+  <p>Nama Lengkap           : </p>
+
+  <p>Jenis Kelamin          : </p>
+
+  <p>Alamat                 : </p>
+
+  <p>Kota                   : </p>
+  
+  <p>Tempat Tanggal Lahir   : </p>
+
+  <p>Email                  : </p>
+
+  <p>Ketuanaan/Disabilitas  : </p>
+
+  <input type="file" id="real-file" hidden="hidden" />
+  <button type="button" id="custom-button">Upload CV</button>
+  <span id="custom-text">Upload CV anda dengan meng-KLIK tombol di samping.</span>
+<a href="prosespengiriman.html">
+<button type="submit" class="send" name="send" value="Submit">Kirim Lamaran</button></a>
+<script type="text/javascript">
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "Upload CV anda dengan meng-KLIK tombol di samping.";
+  }
+});
+</script>
+</div>
+    <div class="bgimg-1">
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Pendaftaran</title>
+<style>
+body {font-family: Arial}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.button{
+  background-color: #49dfdf;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  transition: ease-in-out;
+  border-radius: 12px;
+}
+.container {
+  padding: 20px;
+  margin: 10px;
+}
+
+.span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.form_login{
+	
+	width: 100%;
+	padding: 6px;
+	font-size: 11pt;
+	margin-bottom: 10px;
+	border-radius: 10px;
+} 
+h1{
+  text-align: center;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: auto; 
+  height: auto ;  
+  padding-top: auto;
+
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid rgb(216, 216, 216);
+  height: auto;
+  width: auto;
+  max-width: max-content;
+  border-radius: 10px 10px; 
+}
+.container{
+  border-radius: auto;
+}
+.p{
+  text-decoration: none;
+
+}
+.animate {
+  -webkit-animation: animatezoom 0.7s;
+  animation: animatezoom 0.5s;
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+</style>
+</head>
+<body>
+<h1> PENDAFTARAN </h1>
+<div id="card">
+  <div class="modal">
+  </div>
+  <form class="modal-content animate" action="/isien judul php nang kene.php" method="post">
+    <div class="container">
+
+      <form action=".......isi nang kene.............................................................................../action_page.php">
+        <label for="fname">Nama Lengkap:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Nama lengkap"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Masukkan Email"><br>
+        <label for="email">Alamat:</label><br>
+        <input type="text" id="Alamat" name="alamat" placeholder="Masukkan Alamat"><br><br>
+        <label for="birthday">Tanggal Lahir:</label><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+
+      <label for="disabilitas">Ketunaan / Disabilitas :</label>
+      <select id="disabilitas" name="disabilitas">
+      <option name="daksa" value="daksa">Disabilitas Daksa</option>
+      <option name="netra" value="netra">Disabilitas Netra</option>
+      <option name="mental" value="Mental">Disabilitas Mental</option>
+      <option name="runguwicara" value="rungu">Disabilitas Rungu Wicara</option>
+      <option name="grahita" value="grahita">Disabilitas Grahita</option>
+      </select><br><br>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr> 
+        <p>Saya setuju dengan <a href="syarat&ketentuan.html">Syarat & Ketentuan Disabilitas.</a></p>
+      <button type="submit" class="button" >
+          <a href="landingpage.html" class="button" > MASUK </button></a>
+            <p>Anda sudah Punya akun? <a href="LoginUser.html">Masuk</a></p>
+          </div>
+        </form>
+    </div>
+     </div>
+  </form>
+</div>             
+
+</body>
+</html>

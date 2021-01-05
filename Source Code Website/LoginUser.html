@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Login Admin</title>
+<style>
+body {font-family: Arial}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.button{
+  background-color: #34e4db;
+  color: rgb(255, 255, 255);
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+  width: 190px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.button:hover{
+  opacity: 0.8;
+}
+.container {
+  padding: 20px;
+  margin: 10px;
+}
+
+.span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.form_login{
+	
+	width: 100%;
+	padding: 6px;
+	font-size: 11pt;
+	margin-bottom: 10px;
+	border-radius: 15px;
+} 
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: auto; 
+  height: auto ;  
+  padding-top: auto;
+
+}
+.modal-content {
+  background-color: #ffffff;
+  border: 1px solid rgb(175, 175, 175);
+  height: auto;
+  width: 30%;
+  max-width: max-content;
+  border-radius: 10px 10px; 
+  margin-top: 10%;
+  position: fixed;
+  margin-left: 450px;
+}
+.container{
+  border-radius: 100px;
+}
+.animate {
+  -webkit-animation: animatezoom 0.7s;
+  animation: animatezoom 0.7s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+</style>
+</head>
+<body>
+<div id="card">
+  <div class="modal">
+  </div>
+  <form class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text"  class="form_login" id="user" placeholder="Masukkan Username" title="Username" required>
+
+      <label for="uname"><b>Password</b></label>
+			<input type="password" class="form_login" id="pass" title="Password" placeholder="Masukkan Password" id="myInput" required><br><br>
+      <a href="landingpageuser1.html" class="button"> Masuk </button></a>
+          <p>Belum Punya akun ? <a href="pendaftaran.html">Daftar</a></p>
+    </div>
+     </div>
+  </form>
+</div>             
+</body>
+</html>
