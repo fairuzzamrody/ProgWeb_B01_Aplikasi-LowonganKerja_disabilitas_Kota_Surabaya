@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	
+	<title>Edit Profile Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/style.css"rel="stylesheet" type="text/css" />
+
+	<style>
+		body {
+  background-image: url('gambar/bg3.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+</head>
+<body>
+	<h1>Edit Profile Admin</h1>
+	<br>
+	<div class="kotak_login">
+		<form>
+			<div class="imgcontainer">
+				<img src="Gambar/img_avatar.png" alt="Avatar" class="avatar">
+				<br>
+				<br>
+				<span id="upload">
+			<span class="fileupload-new"><span class="fileupload-exists"><input type="file" >
+			
+			</div></span>
+            <label>Nama Admin</label>
+			<input type="text" name="Nama" class="form_login" placeholder="Nama Lengkap" required>
+			
+			<label>Email</label>
+			<input type="email" name="Email" class="form_login" placeholder="Email" required>
+
+			<label>Tanggal Lahir</label>
+			<input type="date" name="TempatTanggalLahir" class="form_login"  name ="password"required>
+			
+			<label>Alamat</label>
+			<input type="text" name="Alamat" class="form_login" placeholder="Alamat Lengkap"required>
+
+			<label>Password lama</label>
+			<input type="password" name="password" class="form_login" placeholder="Masukkan Password Lama" required>
+	
+			<label>Buat Baru Password</label>
+			<input type="password" class="form_login" placeholder="Masukkan Password" id="myInput">
+				<input type="checkbox" onclick="myFunction()">Show Password
+				<script>
+				function myFunction() {
+				  var x = document.getElementById("myInput");
+				  if (x.type === "password") {
+					x.type = "text";
+				  } else {
+					x.type = "password";
+				  }
+				}
+				</script>
+				</form>
+			<button onclick="myFunction1()" ><a href="PROFIL_ADMIN.html">Simpan</a></button>
+			<script>
+				function myFunction1() {
+				  alert("Perubahan Data Admin Telah Tersimpan");
+				}
+				</script>				
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.metisMenu.js"></script>
+		<script src="js/custom.js"></script>
+</body>
+</html>
